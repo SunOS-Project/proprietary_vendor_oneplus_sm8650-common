@@ -3363,6 +3363,7 @@ PRODUCT_PACKAGES += \
     ATFWD-daemon \
     adpl \
     adsprpcd \
+    audioadsprpcd \
     cdsprpcd \
     cnd \
     cnss-daemon \
