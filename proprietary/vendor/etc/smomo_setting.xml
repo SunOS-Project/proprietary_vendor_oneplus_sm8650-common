@@ -215,10 +215,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <AppLayer  name="com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.closefriends.moment3.container.MomentActivity" type="camera" strategy="mode" mode="2" enable="true"/>
       </LayerApp>
 
-      <LayerApp name="DouYinLiteShiKe">
-        <AppLayer  name="com.ss.android.ugc.aweme.lite/com.ss.android.ugc.aweme.detail.ui.DetailActivity" type="camera" strategy="mode" mode="2" enable="true"/>
-      </LayerApp>
-
       <LayerApp name="DouYinHuoShan">
         <AppLayer  name="SurfaceView[com.ss.android.ugc.live/com.ss.android.ugc.aweme.shortvideo.ui.VideoRecordNewActivity](BLAST)" type="camera" strategy="mode" mode="2" enable="true"/>
       </LayerApp>
