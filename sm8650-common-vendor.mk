@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oneplus/sm8650-common
 
 PRODUCT_COPY_FILES += \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/aac_richtap.config:$(TARGET_COPY_OUT_ODM)/etc/aac_richtap.config \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/apdr.conf:$(TARGET_COPY_OUT_ODM)/etc/apdr.conf \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/AiFace.json:$(TARGET_COPY_OUT_ODM)/etc/camera/AiFace.json \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/CameraOemConfiguration.config:$(TARGET_COPY_OUT_ODM)/etc/camera/CameraOemConfiguration.config \
@@ -1156,6 +1157,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/dolby/dolby_vision.cfg:$(TARGET_COPY_OUT_ODM)/etc/dolby/dolby_vision.cfg \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/android.hardware.contexthub-service.qmi.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.contexthub-service.qmi.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/android.hardware.secure_element-service.qti.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.secure_element-service.qti.rc \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/init/commcenterd.rc:$(TARGET_COPY_OUT_ODM)/etc/init/commcenterd.rc \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/init/esim@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/esim@1.0-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/init.touchDaemon.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.touchDaemon.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor-oplus-hardware-performance-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor-oplus-hardware-performance-V1-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor-oplus-hardware-touch-V2-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor-oplus-hardware-touch-V2-service.rc \
@@ -1172,6 +1175,99 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/oem_stx_platform_license.pfm:$(TARGET_COPY_OUT_ODM)/etc/oem_stx_platform_license.pfm \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/sap.conf:$(TARGET_COPY_OUT_ODM)/etc/sap.conf \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/uah/uahconfig.pb:$(TARGET_COPY_OUT_ODM)/etc/uah/uahconfig.pb \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_0.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_0.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_1.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_1.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_10.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_10.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_100.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_100.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_101.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_101.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_102.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_102.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_103.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_103.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_104.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_104.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_105.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_105.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_106.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_106.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_107.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_107.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_108.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_108.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_109.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_109.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_11.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_11.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_110.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_110.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_111.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_111.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_112.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_112.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_118.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_118.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_12.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_12.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_122.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_122.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_170.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_170.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_2.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_2.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_3.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_3.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_302.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_302.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_303.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_303.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_304.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_304.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_305.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_305.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_308.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_308.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_309.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_309.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_310.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_310.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_315.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_315.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_316.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_316.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_318.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_318.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_363.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_363.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_364.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_364.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_365.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_365.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_366.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_366.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_367.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_367.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_368.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_368.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_369.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_369.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_370.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_370.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_4.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_4.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_41.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_41.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_42.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_42.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_43.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_43.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_44.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_44.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_45.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_45.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_46.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_46.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_47.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_47.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_5.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_5.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_51.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_51.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_52.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_52.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_53.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_53.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_54.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_54.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_55.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_55.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_56.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_56.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_59.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_59.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_6.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_6.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_60.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_60.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_61.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_61.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_62.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_62.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_63.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_63.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_64.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_64.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_65.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_65.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_66.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_66.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_67.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_67.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_68.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_68.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_69.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_69.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_7.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_7.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_8.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_8.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/def/effect_9.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_9.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/soft/effect_0.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_0.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/soft/effect_1.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_1.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/soft/effect_105.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_105.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/soft/effect_106.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_106.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/soft/effect_107.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_107.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/soft/effect_109.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_109.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/soft/effect_2.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_2.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/soft/effect_3.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_3.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/soft/effect_309.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_309.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/soft/effect_310.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_310.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/soft/effect_315.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_315.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/soft/effect_316.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_316.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/soft/effect_318.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_318.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/soft/effect_363.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_363.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/soft/effect_364.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_364.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/soft/effect_4.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_4.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/soft/effect_46.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_46.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/soft/effect_47.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_47.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/soft/effect_54.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_54.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/soft/effect_6.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_6.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/soft/effect_7.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_7.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/soft/effect_8.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_8.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/virtualcamera.json:$(TARGET_COPY_OUT_ODM)/etc/virtualcamera.json \
     vendor/oneplus/sm8650-common/proprietary/odm/lib64/camera/awb_parameter_default.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/awb_parameter_default.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/lib64/camera/awb_parameter_qtech_imx581_wide.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/awb_parameter_qtech_imx581_wide.bin \
@@ -1225,11 +1321,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/oneplus/sm8650-common/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/oneplus/sm8650-common/proprietary/system_ext/etc/init/tcmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/tcmd.rc \
-    vendor/oneplus/sm8650-common/proprietary/system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc \
-    vendor/oneplus/sm8650-common/proprietary/system_ext/etc/init/vendor.qti.qccsyshal_aidl-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.qti.qccsyshal_aidl-service.rc \
-    vendor/oneplus/sm8650-common/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
     vendor/oneplus/sm8650-common/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
-    vendor/oneplus/sm8650-common/proprietary/system_ext/etc/permissions/com.qti.qcc.vendor_qcc.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.qcc.vendor_qcc.xml \
     vendor/oneplus/sm8650-common/proprietary/system_ext/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/dpmapi.xml \
     vendor/oneplus/sm8650-common/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
     vendor/oneplus/sm8650-common/proprietary/system_ext/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_libpermissions.xml \
@@ -1238,12 +1330,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
     vendor/oneplus/sm8650-common/proprietary/system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.qti.ims.rcsservice.xml \
     vendor/oneplus/sm8650-common/proprietary/system_ext/etc/permissions/vendor.qti.imsdcservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.qti.imsdcservice.xml \
-    vendor/oneplus/sm8650-common/proprietary/system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml \
     vendor/oneplus/sm8650-common/proprietary/system_ext/etc/seccomp_policy/tcmd.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/tcmd.policy \
-    vendor/oneplus/sm8650-common/proprietary/system_ext/etc/seccomp_policy/wfdservice64.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice64.policy \
     vendor/oneplus/sm8650-common/proprietary/system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_telephony_system_packages_config.xml \
     vendor/oneplus/sm8650-common/proprietary/system_ext/etc/sysconfig/qti_whitelist_system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist_system_ext.xml \
-    vendor/oneplus/sm8650-common/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/ASR_binary/Whisper/libSnpeHtpV75Skel.so:$(TARGET_COPY_OUT_VENDOR)/etc/ASR_binary/Whisper/libSnpeHtpV75Skel.so \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/ASR_binary/Whisper/speech_float.eai:$(TARGET_COPY_OUT_VENDOR)/etc/ASR_binary/Whisper/speech_float.eai \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/O_STX_platform_license.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/O_STX_platform_license.pfm \
@@ -1499,7 +1588,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/media_profiles_cliffs_v0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_cliffs_v0.xml \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/media_profiles_cliffs_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_cliffs_v1.xml \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/media_profiles_pineapple.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_pineapple.xml \
-    vendor/oneplus/sm8650-common/proprietary/vendor/etc/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/mem_logger_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mem_logger_config.xml \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/models/acd/environment.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/environment.eai \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/models/acd/event.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/event.eai \
@@ -2656,13 +2744,13 @@ PRODUCT_PACKAGES += \
     libasphere \
     libquasar \
     libshoebox \
-    vendor.display.color@1.0 \
-    vendor.display.color@1.1 \
-    vendor.display.color@1.2 \
-    vendor.display.color@1.3 \
+    vendor.display.color@1.0_vendor \
+    vendor.display.color@1.1_vendor \
+    vendor.display.color@1.2_vendor \
+    vendor.display.color@1.3_vendor \
     vendor.display.color@1.4 \
     vendor.display.color@1.5 \
-    vendor.display.postproc@1.0 \
+    vendor.display.postproc@1.0_vendor \
     vendor.libdpmctmgr \
     vendor.libdpmfdmgr \
     vendor.libdpmframework \
@@ -2701,7 +2789,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss-service \
     vendor.qti.hardware.AGMIPC@1.0-impl \
     vendor.qti.hardware.ListenSoundModel@1.0-impl \
-    vendor.qti.hardware.ListenSoundModel@1.0 \
+    vendor.qti.hardware.ListenSoundModel@1.0_vendor \
     vendor.qti.hardware.alarm-V1-ndk \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.1 \
@@ -2740,16 +2828,15 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.factory-V1-ndk \
     vendor.qti.hardware.factory@1.0 \
     vendor.qti.hardware.factory@1.1 \
-    vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.iop@1.0 \
-    vendor.qti.hardware.iop@2.0 \
-    vendor.qti.hardware.limits@1.0 \
-    vendor.qti.hardware.limits@1.1 \
+    vendor.qti.hardware.iop@2.0_vendor \
+    vendor.qti.hardware.limits@1.0_vendor \
+    vendor.qti.hardware.limits@1.1_vendor \
     vendor.qti.hardware.limits@1.2 \
     vendor.qti.hardware.mwqemadapter@1.0 \
     vendor.qti.hardware.mwqemadapteraidlservice-V1-ndk \
     vendor.qti.hardware.pal@1.0-impl \
-    vendor.qti.hardware.perf2-V1-ndk \
+    vendor.qti.hardware.perf2-V1-ndk_vendor \
     vendor.qti.hardware.power.powermodule-V1-ndk \
     vendor.qti.hardware.qccsyshal@1.0_vendor \
     vendor.qti.hardware.qccsyshal@1.1_vendor \
@@ -2759,7 +2846,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qseecom-V1-ndk \
     vendor.qti.hardware.qseecom@1.0 \
     vendor.qti.hardware.qteeconnector@1.0 \
-    vendor.qti.hardware.qxr-V1-ndk \
+    vendor.qti.hardware.qxr-V1-ndk_vendor \
     vendor.qti.hardware.radio.am-V1-ndk \
     vendor.qti.hardware.radio.am@1.0 \
     vendor.qti.hardware.radio.atcmdfwd@1.0 \
@@ -2844,7 +2931,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.memory.pasrmanager@1.1 \
     vendor.qti.power.pasrmanager@1.0 \
     vendor.qti.qccvndhal_aidl-V1-ndk_vendor \
-    vendor.qti.qccvndhal_aidl-halimpl \
+    vendor.qti.qccvndhal_aidl-halimpl_vendor \
     vendor.qti.qegahal-V1-ndk_platform \
     vendor.qti.qesdhal-impl \
     vendor.qti.qesdhal@1.0 \
@@ -2854,9 +2941,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.qesdhalaidl-V2-ndk \
     vendor.qti.qesdsys-V3-ndk \
     vendor.qti.qesdsys-V4-ndk \
-    vendor.qti.qspmhal-V1-ndk \
+    vendor.qti.qspmhal-V1-ndk_vendor \
     vendor.qti.qspmhal-impl \
-    vendor.qti.qspmhal@1.0 \
+    vendor.qti.qspmhal@1.0_vendor \
     vendor.qti.voiceprint@1.0 \
     chre_qsh_shim \
     libDspIOProxy_skel \
@@ -2886,49 +2973,14 @@ PRODUCT_PACKAGES += \
     libdpmtcm \
     libimscamera_jni \
     libimsmedia_jni \
-    libmmosal \
-    libmmparser_lite \
-    libmmrtpdecoder \
-    libmmrtpencoder \
-    libqcc \
-    libqcc_file_agent_sys \
-    libqccdme \
-    libqccfileservice \
-    libwfdavenhancements \
-    libwfdclient \
-    libwfdcommonutils \
-    libwfdconfigutils \
-    libwfddisplayconfig \
-    libwfdmminterface \
-    libwfdmmsink \
-    libwfdmmsrc_system \
-    libwfdnative \
-    libwfdrtsp \
-    libwfdservice \
-    libwfdsinksm \
-    libwfduibcinterface \
-    libwfduibcsink \
-    libwfduibcsinkinterface \
-    libwfduibcsrc \
-    libwfduibcsrcinterface \
     vendor.qti.ImsRtpService-V1-ndk \
     vendor.qti.diaghal@1.0 \
     vendor.qti.hardware.dpmaidlservice-V1-ndk \
     vendor.qti.hardware.dpmservice@1.0 \
-    vendor.qti.hardware.qccsyshal@1.0 \
-    vendor.qti.hardware.qccsyshal@1.1 \
-    vendor.qti.hardware.qccsyshal@1.2-halimpl \
-    vendor.qti.hardware.qccsyshal@1.2 \
-    vendor.qti.hardware.qccvndhal@1.0 \
-    vendor.qti.hardware.wifidisplaysession@1.0 \
-    vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk \
     vendor.qti.ims.datachannelservice-V1-ndk \
     vendor.qti.ims.datachannelservice-V2-ndk \
     vendor.qti.imsrtpservice@3.0 \
     vendor.qti.imsrtpservice@3.1 \
-    vendor.qti.qccsyshal_aidl-V1-ndk \
-    vendor.qti.qccsyshal_aidl-halimpl \
-    vendor.qti.qccvndhal_aidl-V1-ndk \
     libQnnHtp.aiboost \
     libQnnHtpPrepare.aiboost \
     libQnnHtpV75Stub.aiboost \
@@ -3198,6 +3250,7 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.communicationcenter-V2-ndk \
     vendor.oplus.hardware.displaycolorfeature-V1-ndk \
     vendor.oplus.hardware.displaypanelfeature-V1-ndk \
+    vendor.oplus.hardware.esim-V1-ndk \
     vendor.oplus.hardware.olc2-V2-ndk \
     vendor.oplus.hardware.performance-V1-ndk \
     vendor.oplus.hardware.performance-V2-ndk \
@@ -3258,13 +3311,10 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentYGoogleHEXAGON_WIDEBAND \
     ImsDataChannelService \
     ImsRcsService \
-    QCC \
     QtiTelephonyService \
-    WfdService \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel \
-    WfdCommon \
     com.android.hotwordenrollment.common.util \
     uimgbalibrary \
     uimgbamanagerlibrary \
@@ -3339,7 +3389,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.factoryaidlservice.xml \
     vendor.qti.qccvndhal_aidl-service.xml \
     vendor.qti.qspmhal-service.xml \
-    vendor.qti.qccsyshal_aidl-service.xml \
     android.hardware.contexthub-service.qmi.xml \
     device_manifest_communication_center_aidl.xml \
     manifest_displaycolorfeature_aidl.xml \
@@ -3348,6 +3397,7 @@ PRODUCT_PACKAGES += \
     manifest_oplus_charger_aidl.xml \
     manifest_oplus_cwb_aidl.xml \
     manifest_oplus_displaypanelfeature_aidl.xml \
+    manifest_oplus_esim.xml \
     manifest_oplus_fingerprint_aidl_v3.xml \
     manifest_oplus_sendextcamcmd.xml \
     manifest_oplus_stability_project_aidl.xml \
@@ -3478,10 +3528,8 @@ PRODUCT_PACKAGES += \
     xtra-daemon \
     xtwifi-client \
     dpmd \
-    qccsyshal@1.2-service \
-    qccsyshal_aidl-service \
     tcmd \
-    wfdservice64 \
+    commcenterd \
     cwb_utils_aidl \
     android.hardware.secure_element-service.qti \
     vendor-oplus-hardware-performance-V1-service \
@@ -3490,21 +3538,19 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.cammidasservice-V1-service \
     vendor.oplus.hardware.charger-V6-service \
     vendor.oplus.hardware.displaypanelfeature-service \
+    vendor.oplus.hardware.esim@1.0-service \
     vendor.oplus.hardware.stability.oplus_project-V1-service \
     vendor.pixelworks.hardware.feature-service \
     virtualcameraprovider \
     wlschgd \
     irisConfig \
     oplus_sensor_fb \
-    touchDaemon
+    touchDaemon \
+    touchHidlTest
 
 PRODUCT_PACKAGES += \
     system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
     system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so \
-    system_ext_priv-app_WfdService_lib_arm64_libwfdnative_so \
     vendor_lib64_libEGL_adreno_so \
     vendor_lib64_libGLESv2_adreno_so \
     vendor_lib64_libq3dtools_adreno_so
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
