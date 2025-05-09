@@ -2195,6 +2195,38 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "com.qti.hwcfg.tfe",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/camera/components/com.qti.hwcfg.tfe.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcamera_metadata",
+                "libcamxcommonutils",
+                "libcamxsettingsmanager",
+                "libcom.qti.chinodeutils",
+                "libchilog",
+                "libcutils",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "com.qti.node.afbfusion",
     owner: "oneplus",
     strip: {

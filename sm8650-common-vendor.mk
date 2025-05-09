@@ -2005,6 +2005,7 @@ PRODUCT_PACKAGES += \
     com.qti.hwcfg.bps \
     com.qti.hwcfg.ife \
     com.qti.hwcfg.ipe \
+    com.qti.hwcfg.tfe \
     com.qti.node.afbfusion \
     com.qti.node.aon \
     com.qti.node.customhwnode \
