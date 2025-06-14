@@ -1168,7 +1168,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.oplus.hardware.stability.oplus_project-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.stability.oplus_project-V1-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.pixelworks.hardware.feature-service-lazy.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.pixelworks.hardware.feature-service-lazy.rc \
-    vendor/oneplus/sm8650-common/proprietary/odm/etc/init/virtualcameraprovider.rc:$(TARGET_COPY_OUT_ODM)/etc/init/virtualcameraprovider.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/izat.conf:$(TARGET_COPY_OUT_ODM)/etc/izat.conf \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/media_codecs_dolby_vision.xml:$(TARGET_COPY_OUT_ODM)/etc/media_codecs_dolby_vision.xml \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_ODM)/etc/media_profiles_V1_0.xml \
@@ -1268,7 +1267,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/soft/effect_6.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_6.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/soft/effect_7.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_7.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/vibrator/9999/soft/effect_8.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_8.bin \
-    vendor/oneplus/sm8650-common/proprietary/odm/etc/virtualcamera.json:$(TARGET_COPY_OUT_ODM)/etc/virtualcamera.json \
     vendor/oneplus/sm8650-common/proprietary/odm/lib64/camera/awb_parameter_default.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/awb_parameter_default.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/lib64/camera/awb_parameter_qtech_imx581_wide.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/awb_parameter_qtech_imx581_wide.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/lib64/camera/awb_parameter_qtech_imx615_front.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/awb_parameter_qtech_imx615_front.bin \
@@ -1531,8 +1529,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/init/vendor.qti.hardware.limits-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.limits-service.rc \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/init/vendor.qti.hardware.perf2-hal-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf2-hal-service.rc \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc \
-    vendor/oneplus/sm8650-common/proprietary/vendor/etc/init/vendor.qti.hardware.secureprocessor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.secureprocessor.rc \
-    vendor/oneplus/sm8650-common/proprietary/vendor/etc/init/vendor.qti.hardware.secureprocessor@1.0.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.secureprocessor@1.0.rc \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate-service.rc \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/init/vendor.qti.hardware.servicetrackeraidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.servicetrackeraidl-service.rc \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/init/vendor.qti.hardware.soter-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.soter-service.rc \
@@ -2890,14 +2886,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.radio.uim_remote_client@1.2 \
     vendor.qti.hardware.radio.uim_remote_server-V1-ndk \
     vendor.qti.hardware.radio.uim_remote_server@1.0 \
-    vendor.qti.hardware.secureprocessor.common-V1-ndk \
-    vendor.qti.hardware.secureprocessor.common-helper \
-    vendor.qti.hardware.secureprocessor.common@1.0-helper \
-    vendor.qti.hardware.secureprocessor.common@1.0 \
-    vendor.qti.hardware.secureprocessor.config-V1-ndk \
-    vendor.qti.hardware.secureprocessor.config@1.0 \
-    vendor.qti.hardware.secureprocessor.device-V1-ndk \
-    vendor.qti.hardware.secureprocessor.device@1.0 \
     vendor.qti.hardware.sensorscalibrate-V1-ndk \
     vendor.qti.hardware.slmadapter@1.0 \
     vendor.qti.hardware.soter-V1-ndk \
@@ -2987,8 +2975,6 @@ PRODUCT_PACKAGES += \
     libQnnHtpV75Stub.aiboost \
     libQnnSystem.aiboost \
     android.hardware.secure_element-V1-ndk_odm \
-    camera.device@3.2-impl_odm \
-    camera.device@3.3-impl_odm \
     com.qti.sensor.imx581 \
     com.qti.sensor.imx615 \
     com.qti.sensor.imx888 \
@@ -3251,7 +3237,6 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.communicationcenter-V2-ndk \
     vendor.oplus.hardware.displaycolorfeature-V1-ndk \
     vendor.oplus.hardware.displaypanelfeature-V1-ndk \
-    vendor.oplus.hardware.esim-V1-ndk \
     vendor.oplus.hardware.olc2-V2-ndk \
     vendor.oplus.hardware.performance-V1-ndk \
     vendor.oplus.hardware.performance-V2-ndk \
@@ -3260,13 +3245,6 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.sendextcamcmd-V2-ndk \
     vendor.oplus.hardware.stability.oplus_project-V2-ndk \
     vendor.oplus.hardware.urcc-V1-ndk \
-    vendor.oplus.hardware.virtual_device.camera.hal@3.3 \
-    vendor.oplus.hardware.virtual_device.camera.manager@1.0-impl \
-    vendor.oplus.hardware.virtual_device.camera.manager@1.0 \
-    vendor.oplus.hardware.virtual_device.camera.provider@2.4-impl \
-    vendor.oplus.hardware.virtual_device.camera.provider@2.5-impl \
-    vendor.oplus.hardware.virtual_device.camera.provider@2.6-impl \
-    vendor.oplus.hardware.virtual_device.camera.provider@2.7-impl \
     vendor.pixelworks.hardware.display-V2-ndk \
     vendor.pixelworks.hardware.display-impl-i7 \
     vendor.pixelworks.hardware.display-impl-i7p \
@@ -3327,7 +3305,6 @@ PRODUCT_PACKAGES += \
     oplus-ims-ext \
     qcrilhook \
     rsmcService \
-    sts-osdk-plugin \
     vendor.qti.ims.connection-V1.0-java \
     vendor.qti.ims.connectionaidlservice-V1-java \
     vendor.qti.ims.datachannelservice-V1-java \
@@ -3381,7 +3358,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qseecom@1.0-service.xml \
     vendor.qti.hardware.qxr-service.xml \
     vendor.qti.hardware.radio.qtiradioconfig.xml \
-    vendor.qti.hardware.secureprocessor.xml \
     vendor.qti.hardware.sensorscalibrate.xml \
     vendor.qti.hardware.servicetrackeraidl-service.xml \
     vendor.qti.hardware.soter-service.xml \
@@ -3444,8 +3420,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.limits@1.2-service \
     vendor.qti.hardware.perf2-hal-service \
     vendor.qti.hardware.qseecom@1.0-service \
-    vendor.qti.hardware.secureprocessor \
-    vendor.qti.hardware.secureprocessor@1.0 \
     vendor.qti.hardware.sensorscalibrate-service \
     vendor.qti.hardware.servicetrackeraidl-service \
     vendor.qti.hardware.soter-service \
@@ -3542,7 +3516,6 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.esim@1.0-service \
     vendor.oplus.hardware.stability.oplus_project-V1-service \
     vendor.pixelworks.hardware.feature-service \
-    virtualcameraprovider \
     wlschgd \
     irisConfig \
     oplus_sensor_fb \
