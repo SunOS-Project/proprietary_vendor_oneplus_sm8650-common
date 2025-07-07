@@ -1159,6 +1159,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/android.hardware.contexthub-service.qmi.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.contexthub-service.qmi.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/android.hardware.secure_element-service.qti.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.secure_element-service.qti.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/commcenterd.rc:$(TARGET_COPY_OUT_ODM)/etc/init/commcenterd.rc \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/init/esim@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/esim@1.0-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/init.touchDaemon.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.touchDaemon.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor-oplus-hardware-performance-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor-oplus-hardware-performance-V1-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor-oplus-hardware-touch-V2-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor-oplus-hardware-touch-V2-service.rc \
@@ -3311,6 +3312,7 @@ PRODUCT_PACKAGES += \
     manifest_oplus_charger_aidl.xml \
     manifest_oplus_cwb_aidl.xml \
     manifest_oplus_displaypanelfeature_aidl.xml \
+    manifest_oplus_esim.xml \
     manifest_oplus_fingerprint_aidl_v3.xml \
     manifest_oplus_sendextcamcmd.xml \
     manifest_oplus_stability_project_aidl.xml \
@@ -3452,6 +3454,7 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.cammidasservice-V1-service \
     vendor.oplus.hardware.charger-V6-service \
     vendor.oplus.hardware.displaypanelfeature-service \
+    vendor.oplus.hardware.esim@1.0-service \
     vendor.oplus.hardware.stability.oplus_project-V1-service \
     vendor.pixelworks.hardware.feature-service \
     wlschgd \
