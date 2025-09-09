@@ -42500,6 +42500,14 @@ cc_prebuilt_binary {
 }
 
 sh_binary {
+    name: "init.crda",
+    owner: "oneplus",
+    src: "proprietary/vendor/bin/init.crda.sh",
+    filename: "init.crda.sh",
+    soc_specific: true,
+}
+
+sh_binary {
     name: "init.kernel.post_boot-memory",
     owner: "oneplus",
     src: "proprietary/vendor/bin/init.kernel.post_boot-memory.sh",
@@ -42524,10 +42532,42 @@ sh_binary {
 }
 
 sh_binary {
+    name: "init.mdm",
+    owner: "oneplus",
+    src: "proprietary/vendor/bin/init.mdm.sh",
+    filename: "init.mdm.sh",
+    soc_specific: true,
+}
+
+sh_binary {
     name: "init.qcom.class_core",
     owner: "oneplus",
     src: "proprietary/vendor/bin/init.qcom.class_core.sh",
     filename: "init.qcom.class_core.sh",
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "init.qcom.coex",
+    owner: "oneplus",
+    src: "proprietary/vendor/bin/init.qcom.coex.sh",
+    filename: "init.qcom.coex.sh",
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "init.qcom.efs.sync",
+    owner: "oneplus",
+    src: "proprietary/vendor/bin/init.qcom.efs.sync.sh",
+    filename: "init.qcom.efs.sync.sh",
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "init.qcom.sdio",
+    owner: "oneplus",
+    src: "proprietary/vendor/bin/init.qcom.sdio.sh",
+    filename: "init.qcom.sdio.sh",
     soc_specific: true,
 }
 
